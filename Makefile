@@ -21,8 +21,6 @@ clean:
 build:
 	rm -rf dist
 	npm run build
-	cp src/site.webmanifest dist/
-	cp src/images/favicon.ico dist/favicon.ico
 	cp *.html dist/
 	cp src/CNAME dist/
 	find ./dist  -name '*.html' -type f -print0 | xargs -0 -n 1 sed -i '' -e 's/dist\//\//g'
