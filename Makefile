@@ -23,6 +23,7 @@ build:
 	npm run build
 	cp *.html dist/
 	cp src/CNAME dist/
+	cp src/app-ads.txt dist/
 	find ./dist  -name '*.html' -type f -print0 | xargs -0 -n 1 sed -i '' -e 's/dist\//\//g'
 	find ./dist  -name '*.css' -type f -print0 | xargs -0 -n 1 sed -i '' -e 's/dist\//\//g'
 
